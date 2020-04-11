@@ -1,0 +1,32 @@
+body{
+font-family:sans-serif;
+border-style:dotted;
+
+background-color:#CCEEFF;
+}
+h1{
+text-align:center;
+color:forestgreen;
+
+
+margin:30px 0 50px;
+}
+
+.photos{
+margin 10px 50px;
+}
+.photos img{
+width:300px;
+padding:5px;
+filter:grayscale(100%);
+transition:1s;
+}
+.photos img:hover{
+filter:grayscale(0);
+transition:scale(1.1)
+}
+.photos img{
+animation:blinker 2s linear infinite;
+}
+@keyframes blinker{
+50%{opacity:0;}
